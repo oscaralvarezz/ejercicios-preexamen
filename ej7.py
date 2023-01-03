@@ -1,5 +1,5 @@
-import random
 import math
+import random
 
 def leer_numero(ini,fin,mensaje):
     while True:
@@ -7,13 +7,13 @@ def leer_numero(ini,fin,mensaje):
         try:
             dato = int(input())
         except:
-            print("Error: Tipo de dato no valido")
+            print("Error: Tipo de dato no válido")
         if(dato>=ini and dato<=fin):
             return dato
 
 def generador():
-    numeros = leer_numero(1,20,"¿Cuanto numero quieres generar? [1-20]:")
-    modo = leer_numero(1,3,"¿Como quieres redondear los numeros? [1]Al alza [2]A la baja [3]Normal")
+    numeros = leer_numero(1,20,"¿Cuantos números quiere generar? [1-20]:")
+    modo = leer_numero(1,3,"¿De qué modo quiere redondear los numeros? [1] Al alza [2] A la baja [3] Normal")
     listaAleatorios = []
 
     for i in range(numeros):
@@ -27,6 +27,6 @@ def generador():
         else:
             NumeroRedondeado = NumeroAleatorio
             listaAleatorios.append(NumeroAleatorio)
-        print("Numero Aleatorio:",NumeroAleatorio,"Redondeado:",NumeroRedondeado)
+        print("El número generado aleatorio es:",NumeroAleatorio,"El número redondeado sería:",NumeroRedondeado)
     return listaAleatorios
 generador()

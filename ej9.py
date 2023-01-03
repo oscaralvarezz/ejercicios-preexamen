@@ -38,7 +38,7 @@ for i in PilasPalos:
     print('Palo {}: {}'.format(i,PilasPalos[i]))
 
 
-print('\n 3) Seleccione la pila que quiere ordenar')
+print('\n 3) Seleccione la pila que desea ordenar:')
 for i in PilasPalos:
     print('---> {}'.format(i))
 PilaAOrdenar=input()

@@ -1,6 +1,6 @@
 import random
 
-class nodoArbol(object):
+class NodoArbol(object):
     def __init__(self,info):
         self.izq = None
         self.der = None
@@ -8,7 +8,7 @@ class nodoArbol(object):
 
 def insertar_nodo(raiz, dato):
     if(raiz is None):
-        raiz = nodoArbol(dato)
+        raiz = NodoArbol(dato)
     elif(dato < raiz.info):
         raiz.izq = insertar_nodo(raiz.izq,dato)
     else:
@@ -78,7 +78,7 @@ def EsPar(numero):
         return True
 CantidadNumeros=1000
 NumeroAleatorio = random.randint(0,CantidadNumeros)
-Arbol = nodoArbol(NumeroAleatorio)
+Arbol = NodoArbol(NumeroAleatorio)
 ContadorPares=0
 ContadorImpares=0
 for i in range(CantidadNumeros-1):
@@ -98,19 +98,19 @@ elif(Despliegue==2):
 elif(Despliegue==3):
     postorden(Arbol)
 else:
-    print("Orden no encontrada")
+    print("La orden no se ha encontrado")
 
-print("Buscar numero entero en el rango [0-1000]: ")
+print("Buscar número entero en el rango [0-1000]: ")
 NumeroBuscar = int(input())
 NumeroBuscado = buscar(Arbol,NumeroBuscar)
 if(NumeroBuscado is not None):
-    print('Numero {} se encuentra en el arbol'.format(NumeroBuscado))
+    print('El número {} se encuentra en el arbol'.format(NumeroBuscado))
 else:
-    print('Numero {} no se encuentra en el arbol'.format(NumeroBuscado))
+    print('El núumero {} no se encuentra en el arbol'.format(NumeroBuscado))
 
-print("\nElimine 3 numeros del arbol")
+print("\nElimine 3 números del arbol")
 for i in range(3):
-    print('Eliminacion #{}:'.format(i+1))
+    print('Eliminación Nº{}:'.format(i+1))
     NumeroEliminar = int(input())
     eliminar_nodo(Arbol,NumeroEliminar)
 

@@ -1,6 +1,6 @@
 from itertools import permutations
 
-def solver(graph, s, dict_of_names):
+def resolver(graph, s, dict_of_names):
     vertex = []
     for i in range(V):
         if i != s:
@@ -31,7 +31,7 @@ def solver(graph, s, dict_of_names):
     return min_path, final_path
 
 
-dict_of_names = {
+dictado_de_nombres = {
     0:'Iron Man',
     1:'Hulk',
     2:'Khan',
@@ -52,9 +52,8 @@ graph= [
 [399, 199, 385, 990, 412, 155, 0, 100],
 [233, 401, 280, 361, 576, 621, 100, 0]]
 
-V = 8
+V= 8
+S = 6
 
-s = 6
-
-final_cost, path = solver(graph, s, dict_of_names)
-print('El minimo costo posible es: {} para el camino {}'.format(final_cost, path))
+final_cost, path = resolver(graph, S, dictado_de_nombres)
+print('El minimo coste posible es de: {} para el camino entre: {}'.format(final_cost, path))
