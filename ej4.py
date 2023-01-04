@@ -52,7 +52,7 @@ graph= [
 [399, 199, 385, 990, 412, 155, 0, 100],
 [233, 401, 280, 361, 576, 621, 100, 0]]
 
-V= 8
+V = 8
 S = 6
 
 final_cost, path = resolver(graph, S, dictado_de_nombres)

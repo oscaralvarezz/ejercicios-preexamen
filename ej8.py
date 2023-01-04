@@ -76,7 +76,7 @@ def EsPar(numero):
         return False
     else:
         return True
-CantidadNumeros=1000
+CantidadNumeros=20000
 NumeroAleatorio = random.randint(0,CantidadNumeros)
 Arbol = NodoArbol(NumeroAleatorio)
 ContadorPares=0
@@ -114,5 +114,5 @@ for i in range(3):
     NumeroEliminar = int(input())
     eliminar_nodo(Arbol,NumeroEliminar)
 
-print("Numeros pares:",ContadorPares)
-print("Numeros impares:",ContadorImpares)
+print("Números pares:",ContadorPares)
+print("Números impares:",ContadorImpares)

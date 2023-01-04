@@ -15,7 +15,7 @@ def insertar_nodo(raiz, dato, sentido):
     return raiz
 
 def CrearEscuadron():
-    HabilidadesHeroes=nodoArbol("Mision intergalacticas")
+    HabilidadesHeroes=nodoArbol("Mision intergalactica")
 
     insertar_nodo(HabilidadesHeroes,"Khan","Si")
     insertar_nodo(HabilidadesHeroes,"Mision de recuperacion","No")

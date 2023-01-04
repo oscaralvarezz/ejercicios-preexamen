@@ -41,7 +41,7 @@ def maximumSpanningTree(graph):
 
 	for i in range(V):
 		visited[i] = False
-		weights[i] = -sys.maxsize; # se busca entonces el valor máximo
+		weights[i] = -sys.maxsize;  #de este modo buscamos el valor máximo
 	weights[0] = sys.maxsize
 	parent[0] = -1
 
